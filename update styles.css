@@ -9,7 +9,6 @@ body {
     width: 50px;
     height: 50px;
     background-color: red;
-    transform: rotate(45deg);
     animation: fall linear infinite;
 }
 
@@ -24,23 +23,23 @@ body {
 
 .heart:before {
     border-radius: 50px 50px 0 0;
-    top: -25px;
+    top: 0;
     left: 0;
 }
 
 .heart:after {
-    border-radius: 50% 50% 0 0;
+    border-radius: 50px 50px 0 0;
     top: 0;
     left: 25px;
 }
 
 @keyframes fall {
     0% {
-        transform: translateY(-100%) rotate(45deg);
+        transform: translateY(-100%);
         opacity: 1;
     }
     100% {
-        transform: translateY(100%) rotate(45deg);
+        transform: translateY(100%);
         opacity: 0;
     }
 }
